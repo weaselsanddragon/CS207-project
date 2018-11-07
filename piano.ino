@@ -1,3 +1,12 @@
+/*
+
+
+Credit to Ikhsan Ismail for the original code
+which can be found here:
+https://www.hackster.io/San_Ismail/paper-piano-with-arduino-e27da7
+
+Modified by Desmond Ku
+*/
 // Import the CapacitiveSensor Library.
 #include <CapacitiveSensor.h>
 
