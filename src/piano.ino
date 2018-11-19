@@ -77,14 +77,15 @@ void loop()
   
   // When hand is touched the sensor, the speaker will produce a tone.
   // I set a threshold for it, so that the sensor won't be too sensitive.
-  if (total1 > 500) tone(speaker,131);   // frequency
-  if (total2 > 500) tone(speaker,147);   // you can see https://www.arduino.cc/en/Tutorial/toneMelody if you want to change frequency
-  if (total3 > 500) tone(speaker,165);
-  if (total4 > 500) tone(speaker,175);
-  if (total5 > 500) tone(speaker,196);
-  if (total6 > 500) tone(speaker,220);
-  if (total7 > 500) tone(speaker,247);
-  if (total8 > 500) tone(speaker,262);
+  // changed original 500 to 1000 for better testing
+  if (total1 > 1000) tone(speaker,131);   // frequency
+  if (total2 > 1000) tone(speaker,147);   // you can see https://www.arduino.cc/en/Tutorial/toneMelody if you want to change frequency
+  if (total3 > 1000) tone(speaker,165);
+  if (total4 > 1000) tone(speaker,175);
+  if (total5 > 1000) tone(speaker,196);
+  if (total6 > 1000) tone(speaker,220);
+  if (total7 > 1000) tone(speaker,247);
+  if (total8 > 1000) tone(speaker,262);
   
   // When hand didn't touch on it, no tone is produced.
   if (total1<=500  &  total2<=500  &  total3<=500 & total4<=500  &  total5<=500  &  total6<=500 &  total7<=500 &  total8<=500)
