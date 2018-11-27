@@ -88,7 +88,8 @@ void loop()
   if (total8 > 1000) tone(speaker,262);
   
   // When hand didn't touch on it, no tone is produced.
-  if (total1<=500  &  total2<=500  &  total3<=500 & total4<=500  &  total5<=500  &  total6<=500 &  total7<=500 &  total8<=500)
+  // because of change above change 500 to 1000
+  if (total1<=1000  &  total2<=1000  &  total3<=1000 & total4<=1000  &  total5<=1000  &  total6<=1000 &  total7<=1000 &  total8<=1000)
     noTone(speaker);
 
   delay(10);                             // arbitrary delay to limit data to serial port 
