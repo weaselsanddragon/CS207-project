@@ -4,7 +4,6 @@ This project is a simple piano system that contains 8 keys but produces as many 
 - /src - here is the code for the project
 - /libraries - any libraries you will need for the project
 - /img - images for the readme
-- /LICENSE - license file
 - /README.md - the file you are reading right now
 # Requirements and Materials
 Software:
