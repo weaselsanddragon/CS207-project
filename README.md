@@ -24,7 +24,8 @@ Materials:
 - 2 x push buttons
 - ~30-40 x male-male wires
 # Build Instructions
-
+![image of arduino](https://github.com/weaselsanddragon/CS207-project/blob/master/img/diagram.JPG)
+![image of schematic](https://github.com/weaselsanddragon/CS207-project/blob/master/img/diagram2.JPG)
 # Usage
 To use the paino system follow these steps
 - open the Arduino IDE
