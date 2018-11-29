@@ -26,3 +26,27 @@ Materials:
 # Build Instructions
 
 # Usage
+To use the paino system follow these steps
+- open the Arduino IDE
+- upload the code to the Arduino
+- once the code is uploaded press on the keyboard
+- you used the project
+
+other features include making the notes flat or sharp
+- to make the notes sharp apply a bright light to the photoresistor
+- to make the notes flat apply a shadow to the photoresistor
+
+depending on the light in the room the notes may already be flat or sharp
+- if flat may need to apply a bright light close to the resistor to get it sharp
+- if sharp may need to get a darker shadow to make flat
+
+another feature is the octave buttons
+- pressing one of the buttons makes the octave range go up or down
+- there are 7 octaves programmed in the code
+- if you are at the lowest octave it won't go any lower
+- if you are at the highest ovtave it won't go any higher
+# Team
+The team consists of me but with the help of some of my friends to help gather some of the materials
+# Credits
+- Trevor Tomesh - for providing a demo repo to base the README and structure of the repo
+- Ikhsan Ismail - for the project idea and base code
