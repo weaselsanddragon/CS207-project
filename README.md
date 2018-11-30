@@ -29,7 +29,7 @@ Materials:
 # Build Instructions
 The first thing you will want to do is make the piano. On a 8 1/2 x 11 piece of white paper draw 8 piano keys on the piece of paper USING PENCIL. I found that if you draw the piano keys about 2 3/4 inchs tall and 1 inch wide you get a good sized key. The image below is NOT to scale but should give you an idea on what I mean. If you want you could style the keys to be more like a piano like the picture at the top of the README. Just make sure that the top of the key is at least a paperclip in width.
 ![image of rough piano](https://github.com/weaselsanddragon/CS207-project/blob/master/img/rough%20keyboard.jpg)
-The second thing you should do is build the circuit shown down below. For more detailed instructions scroll down.
+The second thing you should do is build the circuit shown down below. in the images below the blue wires should connect to the paper piano you made and in the schematic you would connect a wire from pins 3-10 to the piano before the resistor. For more detailed instructions scroll down.
 ![image of arduino](https://github.com/weaselsanddragon/CS207-project/blob/master/img/diagram.JPG)
 ![image of schematic](https://github.com/weaselsanddragon/CS207-project/blob/master/img/diagram2.JPG)
 Steps on how to build piano:
@@ -40,7 +40,7 @@ Steps on how to build piano:
 - on the same end of the resistor of pins 3-10 attach a wire and connect that to your paper piano one wire per key
 - to help connect the wire to the paper use either a metal paperclip, tape or both
 
-NOTE: If using tape it may effect the values read for your paper capsense and my need to edit some lines of code
+NOTE: If using tape it may effect the values read for your paper capsense and you may need to edit some lines of code
 
 Steps on how to build speaker:
 - attach a wire from pin 11 to speaker
