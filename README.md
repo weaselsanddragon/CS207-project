@@ -1,5 +1,6 @@
 # CS207-project
 This project is a simple piano system that contains 8 keys but produces as many notes as a normal piano. This piano is built using an arduino uno and using the Capsense library.
+
 <img src=https://github.com/weaselsanddragon/CS207-project/blob/master/img/project.jpg width="500" height="500">
 # Repository Contents
 - /img - images for the readme
