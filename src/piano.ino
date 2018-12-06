@@ -17,6 +17,7 @@ Modified by Desmond Ku
 #define button1 12
 #define button2 13
 
+// define notes
 #define B0 31
 #define C1 33
 #define CS1 35
@@ -107,7 +108,12 @@ Modified by Desmond Ku
 
 // value of photoresistor
 int value;
+// threshold of flat and sharp
+int flat = 100;
+int sharp = 500;
+// octave
 int mode = 3;
+// button states
 int cur1 = HIGH;
 int last1 = HIGH;
 int cur2 = HIGH;
@@ -231,7 +237,7 @@ void loop()
 
 void Octave1(long total1, long total2, long total3, long total4, long total5, long total6, long total7, long total8, int value)
 {
-  if (value < 50) // flat
+  if (value < flat) // flat
   {
     // When hand is touched the sensor, the speaker will produce a tone.
     // I set a threshold for it, so that the sensor won't be too sensitive.
@@ -244,7 +250,7 @@ void Octave1(long total1, long total2, long total3, long total4, long total5, lo
     if (total7 > 500) tone(speaker,AS1);
     if (total8 > 500) tone(speaker,B1);
   }
-  else if (value > 700) // sharp
+  else if (value > sharp) // sharp
   {
     if (total1 > 500) tone(speaker,CS1);   // frequency
     if (total2 > 500) tone(speaker,DS1);   // you can see https://www.arduino.cc/en/Tutorial/toneMelody if you want to change frequency
@@ -270,7 +276,7 @@ void Octave1(long total1, long total2, long total3, long total4, long total5, lo
 
 void Octave2(long total1, long total2, long total3, long total4, long total5, long total6, long total7, long total8, int value)
 {
-  if (value < 50) // flat
+  if (value < flat) // flat
   {
     // When hand is touched the sensor, the speaker will produce a tone.
     // I set a threshold for it, so that the sensor won't be too sensitive.
@@ -283,7 +289,7 @@ void Octave2(long total1, long total2, long total3, long total4, long total5, lo
     if (total7 > 500) tone(speaker,AS2);
     if (total8 > 500) tone(speaker,B2);
   }
-  else if (value > 700) // sharp
+  else if (value > sharp) // sharp
   {
     if (total1 > 500) tone(speaker,CS2);   // frequency
     if (total2 > 500) tone(speaker,DS2);   // you can see https://www.arduino.cc/en/Tutorial/toneMelody if you want to change frequency
@@ -309,7 +315,7 @@ void Octave2(long total1, long total2, long total3, long total4, long total5, lo
 
 void Octave3(long total1, long total2, long total3, long total4, long total5, long total6, long total7, long total8, int value)
 {
-  if (value < 50) // flat
+  if (value < flat) // flat
   {
     // When hand is touched the sensor, the speaker will produce a tone.
     // I set a threshold for it, so that the sensor won't be too sensitive.
@@ -322,7 +328,7 @@ void Octave3(long total1, long total2, long total3, long total4, long total5, lo
     if (total7 > 500) tone(speaker,AS3);
     if (total8 > 500) tone(speaker,B3);
   }
-  else if (value > 700) // sharp
+  else if (value > sharp) // sharp
   {
     if (total1 > 500) tone(speaker,CS3);   // frequency
     if (total2 > 500) tone(speaker,DS3);   // you can see https://www.arduino.cc/en/Tutorial/toneMelody if you want to change frequency
@@ -348,7 +354,7 @@ void Octave3(long total1, long total2, long total3, long total4, long total5, lo
 
 void Octave4(long total1, long total2, long total3, long total4, long total5, long total6, long total7, long total8, int value)
 {
-  if (value < 50) // flat
+  if (value < flat) // flat
   {
     // When hand is touched the sensor, the speaker will produce a tone.
     // I set a threshold for it, so that the sensor won't be too sensitive.
@@ -361,7 +367,7 @@ void Octave4(long total1, long total2, long total3, long total4, long total5, lo
     if (total7 > 500) tone(speaker,AS4);
     if (total8 > 500) tone(speaker,B4);
   }
-  else if (value > 700) // sharp
+  else if (value > sharp) // sharp
   {
     if (total1 > 500) tone(speaker,CS4);   // frequency
     if (total2 > 500) tone(speaker,DS4);   // you can see https://www.arduino.cc/en/Tutorial/toneMelody if you want to change frequency
@@ -387,7 +393,7 @@ void Octave4(long total1, long total2, long total3, long total4, long total5, lo
 
 void Octave5(long total1, long total2, long total3, long total4, long total5, long total6, long total7, long total8, int value)
 {
-  if (value < 50) // flat
+  if (value < flat) // flat
   {
     // When hand is touched the sensor, the speaker will produce a tone.
     // I set a threshold for it, so that the sensor won't be too sensitive.
@@ -400,7 +406,7 @@ void Octave5(long total1, long total2, long total3, long total4, long total5, lo
     if (total7 > 500) tone(speaker,AS5);
     if (total8 > 500) tone(speaker,B5);
   }
-  else if (value > 700) // sharp
+  else if (value > sharp) // sharp
   {
     if (total1 > 500) tone(speaker,CS5);   // frequency
     if (total2 > 500) tone(speaker,DS5);   // you can see https://www.arduino.cc/en/Tutorial/toneMelody if you want to change frequency
@@ -426,7 +432,7 @@ void Octave5(long total1, long total2, long total3, long total4, long total5, lo
 
 void Octave6(long total1, long total2, long total3, long total4, long total5, long total6, long total7, long total8, int value)
 {
-  if (value < 50) // flat
+  if (value < flat) // flat
   {
     // When hand is touched the sensor, the speaker will produce a tone.
     // I set a threshold for it, so that the sensor won't be too sensitive.
@@ -439,7 +445,7 @@ void Octave6(long total1, long total2, long total3, long total4, long total5, lo
     if (total7 > 500) tone(speaker,AS6);
     if (total8 > 500) tone(speaker,B6);
   }
-  else if (value > 700) // sharp
+  else if (value > sharp) // sharp
   {
     if (total1 > 500) tone(speaker,CS6);   // frequency
     if (total2 > 500) tone(speaker,DS6);   // you can see https://www.arduino.cc/en/Tutorial/toneMelody if you want to change frequency
@@ -465,7 +471,7 @@ void Octave6(long total1, long total2, long total3, long total4, long total5, lo
 
 void Octave7(long total1, long total2, long total3, long total4, long total5, long total6, long total7, long total8, int value)
 {
-  if (value < 50) // flat
+  if (value < flat) // flat
   {
     // When hand is touched the sensor, the speaker will produce a tone.
     // I set a threshold for it, so that the sensor won't be too sensitive.
@@ -478,7 +484,7 @@ void Octave7(long total1, long total2, long total3, long total4, long total5, lo
     if (total7 > 500) tone(speaker,AS7);
     if (total8 > 500) tone(speaker,B7);
   }
-  else if (value > 700) // sharp
+  else if (value > sharp) // sharp
   {
     if (total1 > 500) tone(speaker,CS7);   // frequency
     if (total2 > 500) tone(speaker,DS7);   // you can see https://www.arduino.cc/en/Tutorial/toneMelody if you want to change frequency
